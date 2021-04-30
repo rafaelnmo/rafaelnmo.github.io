@@ -26,8 +26,8 @@
 :root {
     box-sizing: border-box;
     font-size: 0.75em;
-    --backgroud-dark: #fbfbfbff;
-    --backgroud-light: #f9f9f9ff;
+    --backgroud-light: #fbfbfbff;
+    --backgroud-dark: #f9f9f9ff;
     --white-dark:#fdfdfdff;
     --white-light:white;
 
@@ -303,7 +303,7 @@ nav ul li:hover {
 .intro__title {
     grid-column: 1 / 7;
     grid-row: 5 / 6 ;
-    background-color: var(--backgroud-light);
+    background-color: var(--backgroud-dark);
 
 }
 
@@ -337,7 +337,7 @@ nav ul li:hover {
 .expertise__title {
     grid-column: 1 / 7;
     grid-row: 7 / 8;
-    background-color: var(--backgroud-dark);
+    background-color: var(--backgroud-light);
 
 }
 
@@ -446,7 +446,7 @@ nav ul li:hover {
 .skills__title {
     grid-column: 1 / 7;
     grid-row: 14 / 15;
-    background-color: var(--backgroud-light);
+    background-color: var(--backgroud-dark);
 }
 
 @media (min-width:56.25em) {
