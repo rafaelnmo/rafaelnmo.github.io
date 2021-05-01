@@ -1,3 +1,80 @@
+@import "grid.css";
+@import "style.css";
+
+
+
 .titulo-research {
-    grid-column: 1 / 4;
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    padding-bottom: 0;
+}
+
+
+.mirror-body {
+    grid-column: 1 / 7;
+    grid-row: 8 / 9;
+}
+
+.collectionDevices {
+    grid-column: 1 / 7;
+
+}
+
+.collectionDevices img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.xors {
+    grid-column: 1 / 7;
+}
+
+.xors img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.let-nominal-cmos img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.let-nominal-finfet img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.let-nt-cmos img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.let-nt-finfet img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.mirror img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.nodes img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.vectors img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
 }

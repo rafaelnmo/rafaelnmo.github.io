@@ -96,8 +96,6 @@
     .intro__title {
         grid-column: 1 / 3;
         grid-row: 4 /5 ;
-
-        padding: 0 5em;
     }
 }
 
@@ -290,5 +288,18 @@
     .skills__seven, 
     .skills__eight {
         grid-row: 11 / 12;
+    }
+}
+
+.page-footer {
+    grid-column: 1 / 7;
+    grid-row: 19 / 20;
+
+}
+
+@media (min-width:56.25em) {
+    .page-footer {
+        grid-column: 1 / 7;
+        grid-row: 12 / 13;
     }
 }
