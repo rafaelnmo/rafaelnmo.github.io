@@ -292,3 +292,16 @@
         grid-row: 11 / 12;
     }
 }
+
+.page-footer {
+    grid-column: 1 / 7;
+    grid-row: 19 / 20;
+
+}
+
+@media (min-width:56.25em) {
+    .page-footer {
+        grid-column: 1 / 7;
+        grid-row: 12 / 13;
+    }
+}

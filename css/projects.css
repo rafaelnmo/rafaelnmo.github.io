@@ -1,6 +1,6 @@
 @import "grid.css";
 @import "style.css";
 
-.titulo-research {
+.titulo-projects {
     grid-column: 1 / 5;
 }
