@@ -101,6 +101,7 @@ body {
 
 .titulo {
     background-color: var(--white-light);
+    padding-bottom: 0;
 }
 
 @media (min-width:56.25em) {
@@ -162,6 +163,7 @@ a {
 
 .menu {
     text-align: center;
+    width: 100%;
 }
 
 @media (min-width:56.25em) {
@@ -191,7 +193,6 @@ a {
     display: inline-block;
     padding: 0.5em 1em;
     background-color: var(--backgroud-dark);
-    
 }
 
 .nav-menu li a {
@@ -205,6 +206,12 @@ nav ul li:hover {
 
 
 /* CONTACTS */
+.contacts {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
 @media (min-width:56.25em) {
     .contacts {
         padding: 0 5em;
