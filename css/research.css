@@ -15,16 +15,24 @@
     grid-row: 8 / 9;
 }
 
+
 .collectionDevices {
     grid-column: 1 / 7;
 
 }
 
+
 .collectionDevices img{
-    width: 80%;
+    width: 90%;
     display: block;
     margin: 0 auto;
 }
+
+.collectionDevices p {
+    margin-top: 0.5em;
+    text-align: center;
+}
+
 
 .xors {
     grid-column: 1 / 7;
