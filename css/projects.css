@@ -4,3 +4,40 @@
 .titulo-projects {
     grid-column: 1 / 5;
 }
+
+
+
+.titulo-projects {
+    grid-column: 1 / 7;
+    grid-row: 1 / 2;
+}
+
+.main-menu {
+    grid-column: 1 / 7;
+    grid-row: 2 / 3;
+}
+
+.intro__title {
+    grid-column: 1 / 7;
+    grid-row: 3 /4;
+}
+
+.intro__body {
+    grid-column: 1 / 7;
+    grid-row: 4 / 5;
+}
+
+.mirror {
+    grid-column: 1 / 7;
+    grid-row: 5 / 6;
+}
+
+.mirror-body {
+    grid-column: 1 / 7;
+    grid-row: 6 / 7;
+}
+
+.page-footer {
+    grid-column: 1 / 7;
+    grid-row: 7 / 8;
+}
