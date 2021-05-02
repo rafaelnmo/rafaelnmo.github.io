@@ -25,8 +25,6 @@
 .intro__body {
     grid-column: 1 / 7;
     grid-row: 4 / 5;
-
-    text-align: center;
 }
 
 .mirror {
@@ -37,8 +35,6 @@
 .mirror-body {
     grid-column: 1 / 7;
     grid-row: 6 / 7;
-
-    text-align: center;
 }
 
 .page-footer {
