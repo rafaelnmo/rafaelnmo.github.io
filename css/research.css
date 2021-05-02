@@ -9,11 +9,7 @@
     padding-bottom: 0;
 }
 
-
-.mirror-body {
-    grid-column: 1 / 7;
-    grid-row: 8 / 9;
-}
+/* XOR */
 
 .collectionDevices {
     grid-column: 1 / 7;
@@ -21,9 +17,14 @@
 }
 
 .collectionDevices img{
-    width: 80%;
+    width: 90%;
     display: block;
     margin: 0 auto;
+}
+
+.collectionDevices p {
+    margin-top: 0.5em;
+    text-align: center;
 }
 
 .xors {
@@ -36,14 +37,50 @@
     margin: 0 auto;
 }
 
-.let-nominal-cmos img {
+.xors p {
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+
+.charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+}
+
+
+.let-nominal-cmos img, 
+.let-nominal-finfet img,
+.let-nt-cmos img,
+.let-nt-finfet img {
     width: 100%;
+}
+
+/*
+.let-nominal-finfet img {
+    width: 100%;
+}
+
+
+.let-nt-cmos img {
+    width: 100%;
+}
+
+.let-nt-finfet img {
+    width: 100%;
+}
+*/
+
+/*
+.let-nominal-cmos img {
+    width: 50%;
     display: block;
     margin: 0 auto;
 }
 
 .let-nominal-finfet img {
-    width: 100%;
+    width: 50%;
     display: block;
     margin: 0 auto;
 }
@@ -61,8 +98,39 @@
     margin: 0 auto;
 }
 
+*/
+
+.reference li a {
+    color: #0645AD;
+}
+
+
+.reference li a:visited{
+    text-decoration: none;
+}
+
+
+.reference li a:hover{
+    color: #0645AD;
+    text-decoration: underline;
+}
+
+/* MIRROR */
+
+.mirror-body {
+    grid-column: 1 / 7;
+    grid-row: 8 / 9;
+}
+
+@media (min-width: 56.26em){
+    .mirror-body {
+        grid-column: 3 / 7;
+        grid-row: 5 / 6;
+    }
+}
+
 .mirror img {
-    width: 100%;
+    width: 80%;
     display: block;
     margin: 0 auto;
 }
