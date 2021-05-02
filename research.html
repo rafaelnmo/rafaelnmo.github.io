@@ -44,72 +44,82 @@
                 nodes, despite the electrical characterization, designers 
                 must consider soft error impact on the circuits. The 
                 challenges change significantly as feature sizes are 
-                smaller, even for FinFET devices. The effects of Single 
-                Event Transient are dependent on the circuit topology. 
+                smaller, even for FinFET devices. The Single Event Transient
+                (SET) and their effects are dependent on the circuit topology. 
             </p>
 
             <p>
                 In traditional planar devices, charges associated with the 
                 ion tracks colliding the silicon substrate are deposited in
-                 the drain directly and then diffuse to the drain, as shown 
-                 in Fig. 1 (a).
+                the drain directly and then diffuse to the drain, as shown 
+                in Fig. 1 (a).
                 On bulk FinFET devices, the thin fin region has a tight 
                 connection to the substrate of the bulk FinFETs. This 
                 reduces the area of silicon available for the charge 
                 collection when compared with planar devices. In this case,
-                 less deposited charges will be diffused in the FinFET drain
-                  as illustrates Fig. 1 (b). For 
-                  these reasons, the FinFET devices are considered less 
-                  sensitive to soft errors.
+                less deposited charges will be diffused in the FinFET drain
+                as illustrates Fig. 1 (b). For these reasons, the FinFET devices
+                are considered less sensitive to soft errors.
             </p>
 
             <div class="collectionDevices">
                 <img src="images/collectionDevices.png" alt="">
-                <p>Fig. 1 Charge collection method</p>
+                <p>Fig. 1 Charge collection method.</p>
             </div>
 
             <p>
-                Thus, in this work, we evaluate the soft error
-                 susceptibility on nine XOR topologies, discussing the 
-                 influence of logic family, the device technology and 
-                 environment factors as temperature, on the radiation 
-                 robustness. Also, this work explores the nominal and 
-                 near-threshold operation of these XOR topologies. 
+                Thus, in this work, we evaluate the SET
+                susceptibility on nine XOR topologies, shown in Fig. 2.
+                The main goal is to discuss the 
+                influence of logic family, device technology and 
+                temperature, on the radiation robustness. Also, this work
+                explores the nominal and near-threshold operation of 
+                these XOR topologies. 
             </p>
 
 
             <div class="xors">
                 <img src="images/xor.png" alt="">
+                <p>Fig. 2 XOR topologies explored in this work.</p>
             </div>
             <p>     
-                 Results show that FinFET devices are significantly more 
-                 robust to the radiation effects. Also, most PTL logic
-                  XORs topologies present about 40% of the increase on 
-                  the LET threshold. The dependence of temperature 
-                  aggressively impacts the FinFET technology devices 
+                Results show that FinFET devices are significantly more 
+                robust to the radiation effects. Also, most PTL logic
+                XORs topologies present about 40% of the increase on 
+                the LET threshold. The dependence of temperature 
+                aggressively impacts the FinFET technology devices 
                 operating at near-threshold. Finally, the complete set 
                 of information provided in this work supports designers 
                 in choosing the most appropriate XOR topology according 
                 to the specific design requirements.</p>
+            
+            <div class="charts">
+
+                <div class="let-nominal-cmos chart">
+                    <img src="images/let_nominal_var_temp_cmos.png" alt="">
+                </div>
                 
-            <div class="let-nominal-cmos">
-                <img src="images/let_nominal_var_temp_cmos.png" alt="">
+                <div class="let-nominal-finfet chart">
+                    <img src="images/let_nominal_var_temp_finfet.png" alt="">
+                </div>
+    
+                <div class="let-nt-cmos chart">
+                    <img src="images/let_nt_var_temp_cmos.png" alt="">
+                </div>
+    
+                <div class="let-nt-finfet chart">
+                    <img src="images/let_nt_var_temp_finfet.png" alt="">
+                </div>
+
             </div>
             
-            <div class="let-nominal-finfet">
-                <img src="images/let_nominal_var_temp_finfet.png" alt="">
-            </div>
 
-            <div class="let-nt-cmos">
-                <img src="images/let_nt_var_temp_cmos.png" alt="">
-            </div>
-
-            <div class="let-nt-finfet">
-                <img src="images/let_nt_var_temp_finfet.png" alt="">
-            </div>
-
-
-                <p>https://doi.org/10.29292/jics.v15i2.131</p>
+            <ol class="reference">
+                <li>
+                    <a href="https://doi.org/10.29292/jics.v15i2.131" target="_blank" >https://doi.org/10.29292/jics.v15i2.131</a>
+                </li>
+            </ol>
+                
         </div>
 
             
