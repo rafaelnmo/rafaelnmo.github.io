@@ -89,10 +89,14 @@ body {
     background-color: var(--backgroud-light);
 }
 
-.header img {
+.profile-image {
+    margin: 0;
+    padding: 0.5em;
+}
+
+.profile-image img {
     width: 100%;
     border-radius: 50%;
-    
 }
 
 
@@ -130,20 +134,20 @@ body {
 
 /* SOCIAL MÍDIAS */
 
-.social-medias {
+.social-media {
     background-color: var(--white-light);
     padding: 0 1em;
 }
 
 @media (min-width:56.25em) {
-    .social-medias {
+    .social-media {
         margin: auto auto 1em auto;
     }
 }
 
 .titulo__social-media {
     padding: 0;
-    font-size: 30px;
+    font-size: 2.6em;
     width: 1em;
     text-align: center;
     text-decoration: none;
