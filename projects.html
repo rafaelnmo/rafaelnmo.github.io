@@ -39,7 +39,71 @@
         </div>
 
         <div class="intro__body alu">
-            <p> COMMING SOON</p>
+            <p> This project  aims to develop a digital 
+                synchronous system that both stores and operate saved values, represented by integers, of a matrix of
+                order N in RAM.
+                Basically the purpose of this system is to perform the sum of the values ​​above the
+                main diagonal, including the values ​​of the main diagonal, of a matrix of order N.
+                The entire digital system for this project is described in VHDL, synthesized and prototyped in
+                Altera's FPGA.</p>
+            <p>        
+                On the proposed digital system the “user” can inform an order of the matrix to be
+                computed and the N matrix values. The storage of the values ​​that make up a
+                the matrix informed by the user will be given from a BASE address in memory,
+                previously stipulated in the project design. When the calculation ends the result of the
+                sum is made available.
+            </p>
+
+            <p>
+                Interface of the proposed digital system is shown in Fig. 1. The dado signal informs the order of the matrix 
+                also captures the values ​​to be stored in memory. The soma sign returns the result of the sum 
+                made and the status signal represents the end of the sum.
+
+            </p>
+
+            <div class="ula">
+                <img src="images/interface.png" alt="">
+                <p>Fig. 1 System interface.</p>
+            </div>
+
+            <p>
+                The representation of the behavior of the system is given by the FSM shown in Fig. 2. The behavior was taken from the description in algorithm, already considering registers, operations and control flows.
+
+            </p>
+            <div class="fsm">
+                <img src="images/fsm.png" alt="">
+                <p>Fig. 2 Finite-state machine (FSM) of the system.</p>
+            </div>
+
+            <p>
+                All operations on the data, as well as the generation of state signals for control are 
+                described by the operational block represented in Fig. 3.
+            </p>
+
+            <div class="datapath">
+                <img src="images/datapath2.png" alt="">
+                <p>Fig. 3 Datapath diagram.</p>
+            </div>
+
+            <p>The conections between the control block and operational block diagrams that summarize a complete digital system can be observed in
+                Fig. 4.
+            </p>
+
+            <div class="bc_bo">
+                <img src="images/bc_bo.png" alt="">
+                <p>Fig. 4 Integration of BC and BO.</p>
+            </div>
+
+            <p>A diagram was built to map the all signals and can be seen in Figure 5. This mapping of the input and output signals of the 
+                control block is responsible for a more detailed view of the connection between the two blocks. 
+
+            </p>
+
+            <div class="bc_bo_detail">
+                <img src="images/datapath_controle.png" alt="">
+                <p>Fig. 5 BC detailed signals.</p>
+            </div>
+
                 
         </div>
 
@@ -65,6 +129,71 @@
                 directions of the board.
             </p>
 
+            <h3>Basic Rules</h3>
+
+            <p>Game 23! it is played on a board of 64 houses, light and dark. The main main diagonal (dark) 
+                should always be on the left of each player.
+            </p>
+
+            <div class="fig_0">
+                <img src="images/figura0.png" alt="">
+            </div>
+
+            <p>Game 23! is played between two players, with 12 white pieces on one side and with 12 black 
+                pieces on the other side, each with a specific weight of: 1, 2, 2, 1, 3, 5, 5, 3, 7.11, 11, 7. The 
+                initial move is always up to whoever has the white pieces. Each player starts with 23 points.
+            </p>
+
+            <div class="fig_0">
+                <img src="images/figura1.png" alt="">
+            </div>
+
+            <p>The piece moves forward, one house at a time. When the piece reaches the eighth row of the board, 
+                it is promoted to "double", and its weight doubles.
+            </p>
+
+            <div class="fig_0">
+                <img src="images/figura2.png" alt="">
+            </div>
+
+            <p>The "double" is a piece with wider movements. She moves back and forth, as many houses as she wants. 
+                A "double" cannot be used to raise a piece of the same color.
+            </p>
+
+
+
+            <div class="fig_0">
+                <img src="images/figura3.png" alt="">
+            </div>
+
+            <h3>Captures Methods</h3>
+
+            <p>The capture attempt is mandatory and is always done diagonally. There is no breath. Two or more pieces
+                 together, on the same diagonal, cannot be captured. Pieces can only be captured if there are no 
+                 empty spaces between them. If the piece you are trying to capture has a weight less than the weight 
+                 of the piece you are capturing, the piece is called CAPTURED and is removed from the board and the 
+                 difference in weight is deducted from the opponent's score.
+            </p>
+
+            <div class="fig_0">
+                <img src="images/figura4.png" alt="">
+            </div>
+
+            <p>When the piece that is trying to be captured has a heavier weight than the piece that is capturing 
+                the difference in weights, it is discounted from the weight of the piece that is trying to be captured.
+            </p>
+
+            <div class="fig_0">
+                <img src="images/figura5.png" alt="">
+            </div>
+
+            <p>When the piece being captured has the same weight as the piece being captured it is called CAPTURED, 
+                the board is removed and there is NO discount on the opponent's points.
+            </p>
+
+            <div class="fig_0">
+                <img src="images/figura6.png" alt="">
+            </div>
         </div>
 
         <footer class="page-footer">
