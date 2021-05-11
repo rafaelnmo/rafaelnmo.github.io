@@ -335,9 +335,11 @@
 
 /*-----------------------------------------*/
 
+
+
 :root {
     box-sizing: border-box;
-    font-size: 0.75em;
+    font-size: 1em;
     --backgroud-light: #fbfbfbff;
     --backgroud-dark: #f9f9f9ff;
     --white-dark:#fdfdfdff;
@@ -365,6 +367,7 @@
 *::after {
     box-sizing: inherit;
 }
+
 
 /*------------------------------------------*/
 
