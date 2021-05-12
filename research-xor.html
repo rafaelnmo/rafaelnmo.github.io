@@ -4,9 +4,179 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>XOR</title>
 </head>
 <body>
+    <div class="container">
+
+        <div class="titulo titulo-research">
+            <span class="titulo__sobrenome ">Research</span>
+            <p class="titulo__profissao">Radiation effects and variability <br> in combinational cells</p>
+        </div>
+        
+        <div class="main-menu">
+            <nav class="menu">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="intro__title">
+            <h3>Xor Logic Gates</h3>
+            <p>Electrical Behavior and SET Impact</p>
+        </div>
+
+        <div class="intro__body">
+            <p>	With the advance of computer systems, XOR gates design 
+                became essential to the arithmetic circuits. At nanometer 
+                nodes, despite the electrical characterization, designers 
+                must consider soft error impact on the circuits. The 
+                challenges change significantly as feature sizes are 
+                smaller, even for FinFET devices. The Single Event Transient
+                (SET) and their effects are dependent on the circuit topology. 
+            </p>
+
+            <p>
+                In traditional planar devices, charges associated with the 
+                ion tracks colliding the silicon substrate are deposited in
+                the drain directly and then diffuse to the drain, as shown 
+                in Fig. 1 (a).
+                On bulk FinFET devices, the thin fin region has a tight 
+                connection to the substrate of the bulk FinFETs. This 
+                reduces the area of silicon available for the charge 
+                collection when compared with planar devices. In this case,
+                less deposited charges will be diffused in the FinFET drain
+                as illustrates Fig. 1 (b). For these reasons, the FinFET devices
+                are considered less sensitive to soft errors.
+            </p>
+
+            <div class="collectionDevices">
+                <img src="images/collectionDevices.png" alt="">
+                <p>Fig. 1 Charge collection method.</p>
+            </div>
+
+            <p>
+                Thus, in this work, we evaluate the SET
+                susceptibility on nine XOR topologies, shown in Fig. 2.
+                The main goal is to discuss the 
+                influence of logic family, device technology and 
+                temperature, on the radiation robustness. Also, this work
+                explores the nominal and near-threshold operation of 
+                these XOR topologies. 
+            </p>
+
+
+            <div class="xors">
+                <img src="images/xor.png" alt="">
+                <p>Fig. 2 XOR topologies explored in this work.</p>
+            </div>
+            <p>     
+                Results show that FinFET devices are significantly more 
+                robust to the radiation effects. Also, most PTL logic
+                XORs topologies present about 40% of the increase on 
+                the LET threshold. The dependence of temperature 
+                aggressively impacts the FinFET technology devices 
+                operating at near-threshold. Finally, the complete set 
+                of information provided in this work supports designers 
+                in choosing the most appropriate XOR topology according 
+                to the specific design requirements.</p>
+            
+            <div class="charts">
+
+                <div class="let-nominal-cmos chart">
+                    <img src="images/let_nominal_var_temp_cmos.png" alt="">
+                </div>
+                
+                <div class="let-nominal-finfet chart">
+                    <img src="images/let_nominal_var_temp_finfet.png" alt="">
+                </div>
     
+                <div class="let-nt-cmos chart">
+                    <img src="images/let_nt_var_temp_cmos.png" alt="">
+                </div>
+    
+                <div class="let-nt-finfet chart">
+                    <img src="images/let_nt_var_temp_finfet.png" alt="">
+                </div>
+
+            </div>
+            
+
+            <ol class="reference">
+                <li>
+                    <a href="https://doi.org/10.29292/jics.v15i2.131" target="_blank" >https://doi.org/10.29292/jics.v15i2.131</a>
+                </li>
+            </ol>
+                
+        </div>
+
+            
+        <div class="expertise__title mirror">
+            <h3>Mirror Full Adder</h3>
+            <p>SET Susceptibility</p>
+        </div>
+
+        <div class="intro__body mirror-body">
+            <p>	This work investigates the Mirror full adder circuit using 
+                a 7nm FinFET technology, considering the SET susceptibility 
+                and the robustness of all internal nodes of the circuit. 
+                This work aims to identify how this full adder topology behaves
+                in a specific environment, observing the charge collected at
+                each internal node. 
+                The devices involved in the processing of the carry-out function
+                shown to be more robust than the Sum circuit and also presented
+                a lower error rate. Furthermore, the input vector 000 proved 
+                to be the most critical one, among the input combinations, and
+                the results show a dependence of the type of pulse in the 
+                generation of errors in the Mirror full adder.
+            </p>
+
+            <div class="mirror">
+                <img src="images/mirror.png" alt="">
+            </div>
+
+            <p>     
+                A comparative analysis of SET occurrence and radiation sensitivity 
+                of the Mirror full adder are introduced in this paper.
+                It was found, analytically, that the most susceptible nodes to 
+                generates an error are the <span>e</span> and <span>k</span>, and they are
+                closely related to the Sum output. The nodes <span>g</span> and <span>j</span>
+                are the most sensitive nodes presenting the lowest LETth results, 
+                showing that there are internal nodes more sensitive than the output 
+                nodes. The vector more susceptible to generates an error is $001$.
+                However, the vector 000 presented the lowest LETth, being the
+                critical input combination for the Mirror. Also, it is possible to 
+                conclude that the pulse type 101 is more responsible for generating 
+                errors in the FA analyzed.</p>
+
+            <div class="nodes">
+                <img src="images/sum_cout_nodes2.png" alt="">
+            </div>
+
+            <div class="vectors">
+                <img src="images/sum_cout_vectors2.png" alt="">
+            </div>
+
+            <ol class="reference">
+                <li>
+                    <a href="https://doi.org/10.1109/ICECS49266.2020.9294891" target="_blank" >https://doi.org/10.1109/ICECS49266.2020.9294891</a>
+                </li>
+            </ol>
+            
+        </div>
+
+
+        <footer class="page-footer">
+            <div class="page-footer__inner">
+                Copyright &copy; 2021 Rafael Oliveira
+            </div>
+        </footer>
+
+        
+    </div>
 </body>
 </html>
