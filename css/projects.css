@@ -1,6 +1,0 @@
-@import "grid.css";
-@import "style.css";
-
-.titulo-projects {
-    grid-column: 1 / 5;
-}
