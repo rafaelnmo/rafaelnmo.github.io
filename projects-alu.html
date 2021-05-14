@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALU</title>
+
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="titulo titulo-projects">
+            <span class="titulo__sobrenome">Projects</span>
+            <p class="titulo__profissao">Personal Aplications &amp; <br>  Projects</p>
+        </div>
+        
+        <div class="main-menu">
+            <nav class="menu">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="intro__title alu">
+            <h3>ALU for operations with <br> matrixes of order n</h3>
+            <p>FPGA implementation of a ALU</p>
+        </div>
+
+        <div class="intro__body alu">
+            <p> This project  aims to develop a digital 
+                synchronous system that both stores and operate saved values, represented by integers, of a matrix of
+                order N in RAM.
+                Basically the purpose of this system is to perform the sum of the values ​​above the
+                main diagonal, including the values ​​of the main diagonal, of a matrix of order N.
+                The entire digital system for this project is described in VHDL, synthesized and prototyped in
+                Altera's FPGA.</p>
+            <p>        
+                On the proposed digital system the “user” can inform an order of the matrix to be
+                computed and the N matrix values. The storage of the values ​​that make up a
+                the matrix informed by the user will be given from a BASE address in memory,
+                previously stipulated in the project design. When the calculation ends the result of the
+                sum is made available.
+            </p>
+
+            <p>
+                Interface of the proposed digital system is shown in Fig. 1. The dado signal informs the order of the matrix 
+                also captures the values ​​to be stored in memory. The soma sign returns the result of the sum 
+                made and the status signal represents the end of the sum.
+
+            </p>
+
+            <div class="ula">
+                <img src="images/interface.png" alt="">
+                <p>Fig. 1 System interface.</p>
+            </div>
+
+            <p>
+                The representation of the behavior of the system is given by the FSM shown in Fig. 2. The behavior was taken from the description in algorithm, already considering registers, operations and control flows.
+
+            </p>
+            <div class="fsm">
+                <img src="images/fsm.png" alt="">
+                <p>Fig. 2 Finite-state machine (FSM) of the system.</p>
+            </div>
+
+            <p>
+                All operations on the data, as well as the generation of state signals for control are 
+                described by the operational block represented in Fig. 3.
+            </p>
+
+            <div class="datapath">
+                <img src="images/datapath2.png" alt="">
+                <p>Fig. 3 Datapath diagram.</p>
+            </div>
+
+            <p>The conections between the control block and operational block diagrams that summarize a complete digital system can be observed in
+                Fig. 4.
+            </p>
+
+            <div class="bc_bo">
+                <img src="images/bc_bo.png" alt="">
+                <p>Fig. 4 Integration of BC and BO.</p>
+            </div>
+
+            <p>A diagram was built to map the all signals and can be seen in Figure 5. This mapping of the input and output signals of the 
+                control block is responsible for a more detailed view of the connection between the two blocks. 
+            </p>
+
+            <div class="bc_bo_detail">
+                <img src="images/datapath_controle.png" alt="">
+                <p>Fig. 5 BC detailed signals.</p>
+            </div>
+        </div>
+
+        <footer class="page-footer">
+            <div class="page-footer__inner">
+                Copyright &copy; 2021 Rafael Oliveira
+            </div>
+        </footer>
+
+        
+    </div>
+</body>
+</html>
