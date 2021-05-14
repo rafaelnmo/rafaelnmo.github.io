@@ -748,6 +748,101 @@ span {
     grid-column: 1 / 5;
 }
 
+.alu__media img, .game23__media img {
+    max-width: 100%;
+    display: block;
+}
+
+.intro__projects {
+    grid-row: 4 / 5;
+    grid-column: 1 / 7;
+
+    background-color: var(--backgroud-dark);
+}
+
+.alu__article {
+    background-color: var(--white-light);
+}
+
+
+.game23__article {
+    background-color: var(--white-dark);
+}
+
+
+/*ULA*/
+
+.ula {
+    grid-column: 1 / 7;
+
+}
+
+.ula img{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+/*FSM*/
+.fsm {
+    grid-column: 1 / 7;
+
+}
+
+.fsm img{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* DATAPATH*/
+.datapath {
+    grid-column: 1 / 7;
+
+}
+
+.datapath img{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* BC and BO*/
+.bc_bo {
+    grid-column: 1 / 7;
+
+}
+
+.bc_bo img{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* BC and BO detailed*/
+
+.bc_bo_detail {
+    grid-column: 1 / 7;
+
+}
+
+.bc_bo_detail img{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.fig_0 {
+    grid-column: 1 / 7; 
+}
+
+.fig_0 img{
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+
 
 /*-------EXPERIENCE----------*/
 
