@@ -693,6 +693,49 @@ span {
     }
 }
 
+/*--------RESEARCH---------*/
+
+
+.xor__media img, .mirror__media img {
+    max-width: 100%;
+    display: block;
+}
+
+.intro__research {
+    grid-row: 4 / 5;
+    grid-column: 1 / 7;
+
+    background-color: var(--backgroud-dark);
+}
+
+.flex {
+    grid-column: 1 / 7;
+    grid-row: 5 / 6;
+
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.flex > aticle {
+    flex: 1 1 12em;
+}
+
+.xor__article {
+    background-color: var(--white-light);
+}
+
+
+.mirror__article {
+    background-color: var(--white-dark);
+}
+
+.archive__item-title:hover {
+    text-decoration: underline;
+}
+
+
+
 /*---------PROJECTS--------*/
 
 .titulo-projects {
@@ -705,3 +748,4 @@ span {
 .titulo-experience {
     grid-column: 1 / 5;
 }
+
