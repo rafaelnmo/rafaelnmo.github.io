@@ -1,6 +1,0 @@
-@import "grid.css";
-@import "style.css";
-
-.titulo-experience {
-    grid-column: 1 / 5;
-}
