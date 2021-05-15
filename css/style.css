@@ -870,13 +870,27 @@ span {
     background-color: var(--white-light);
 }
 
+.xor__article > p {
+  color: var(--text-color);
+  margin-top: 0.3em;
+  padding-top: 0.3em;
+}
 
 .mirror__article {
     background-color: var(--white-dark);
 }
 
-.archive__item-title:hover {
+.mirror__article > p {
+  color: var(--text-color);
+  margin-top: 0.3em;
+  padding-top: 0.3em;
+}
+
+.archive__item-title {
     text-decoration: underline;
+    color: blue !important;
+    margin-bottom: 0.1em;
+    padding-bottom: 0.1em;
 }
 
 
@@ -903,11 +917,21 @@ span {
     background-color: var(--white-light);
 }
 
+.alu__article > p {
+  color: var(--text-color);
+  margin-top: 0.3em;
+  padding-top: 0.3em;
+}
 
 .game23__article {
     background-color: var(--white-dark);
 }
 
+.game23__article > p {
+  color: var(--text-color);
+  margin-top: 0.3em;
+  padding-top: 0.3em;
+}
 
 /*ULA*/
 
