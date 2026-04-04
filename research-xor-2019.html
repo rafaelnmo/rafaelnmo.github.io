@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XOR</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <div class="titulo titulo-research">
+            <span class="titulo__sobrenome ">Research</span>
+            <p class="titulo__profissao"> Published in 2019 <br> 26th IEEE ICECS </p>
+        </div>
+        
+        <div class="main-menu-pages">
+            <nav class="menu">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="intro__title">
+            <h3>Xor Logic Gates</h3>
+            <p>Radiation Effects at 16 nm XOR gates</p>
+        </div>
+
+        <div class="intro__body">
+            <p>
+                As technology scales down, digital circuits become increasingly susceptible to radiation-induced faults.
+                This work presents a comparative analysis of the radiation sensitivity of different XOR gate topologies
+                implemented at 16 nm using both CMOS and FinFET devices. Since XOR gates are fundamental building blocks
+                in arithmetic and logic circuits, understanding their robustness is essential for the design of reliable
+                nanoscale systems.
+            </p>
+
+            <p>
+                Nine XOR topologies were evaluated considering two logic styles: Complementary Logic (CL) and Pass-Transistor
+                Logic (PTL). In addition to radiation robustness, the study also compares delay and power consumption,
+                providing a broader view of the trade-offs involved in each implementation. This analysis helps designers
+                select the most suitable XOR topology according to reliability and performance requirements.
+            </p>
+
+            <div class="xors" style="width: 85%; height: auto;">
+                <img src="images/research/xor-2019/xors.png" alt="XOR topologies evaluated in this work">
+                <p>Fig. 1 XOR topologies evaluated in this work.</p>
+            </div>
+
+            <p>
+                The results show that PTL-based XOR gates achieve higher robustness against radiation effects than
+                conventional CMOS-logic implementations. The improvement in LET threshold reaches nearly 30% for CMOS
+                devices and up to 20% for FinFET devices. Moreover, FinFET-based circuits demonstrated significantly
+                better resilience overall, being about three times more robust than CMOS implementations.
+            </p>
+
+            <div class="charts charts--large">
+                <div class="let-nominal-cmos chart">
+                    <img src="images/research/xor-2019/cmosVSFinFET.png" alt="Comparison of radiation robustness for XOR gates in CMOS and FinFET technologies">
+                </div>
+            </div>
+
+            <p>
+                Overall, the study shows that both logic style and device technology strongly influence radiation
+                sensitivity in nanometer circuits. Among the evaluated solutions, PTL implementations and FinFET-based
+                designs provided the best robustness, making them attractive options for reliable digital systems
+                operating in radiation-prone environments.
+            </p>
+            
+
+            <ol class="reference">
+                <li>
+                    <a href="https://doi.org/10.1109/ICECS46596.2019.8964801" target="_blank" >https://doi.org/10.1109/ICECS2019</a>
+                </li>
+            </ol>
+                
+        </div>
+
+
+        <footer class="page-footer">
+            <div class="page-footer__inner">
+                Copyright &copy; 2021 Rafael Oliveira
+            </div>
+        </footer>
+
+        
+    </div>
+</body>
+</html>

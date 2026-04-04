@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirror FA</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <div class="titulo titulo-research">
+            <span class="titulo__sobrenome ">Research</span>
+            <p class="titulo__profissao">Published in 2021 <br> 22nd IEEE LATS</p>
+        </div>
+        
+        <div class="main-menu-pages">
+            <nav class="menu">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                </ul>
+            </nav>
+        </div>
+
+            
+        <div class="expertise__title mirror">
+            <h3>Mirror Full Adder</h3>
+            <p>SET Mitigation Techniques on a Mirror Full Adder</p>
+        </div>
+
+        <div class="intro__body">
+    <p>
+        As CMOS technologies scale to advanced nodes, circuits become increasingly vulnerable to
+        radiation-induced faults such as Single Event Transients (SET). This work investigates the
+        radiation sensitivity of a Mirror Full Adder implemented in 7 nm FinFET technology,
+        considering both nominal and near-threshold voltage operation.
+    </p>
+
+    <div class="xors " style="width: 85%; height: auto;">
+        <img src="images/research/mirror-2021/letth_NTV.png"
+             alt="Mirror Full Adder topology and internal nodes"
+             style="width: 60%; height: auto;">
+        <p>Fig. 1 Mirror Full Adder topology and critical nodes.</p>
+    </div>
+
+    <p>
+        Two circuit-level mitigation techniques are explored: Decoupling Cells (DCELL) and
+        Transistor Sizing (TS). The analysis evaluates their impact on robustness, as well as
+        their effectiveness in reducing error propagation across the circuit under radiation events.
+    </p>
+
+    <div class="xors " style="width: 95%; height: auto;">
+        <img src="images/research/mirror-2021/techniques.png"
+             alt="SET mitigation techniques applied"
+             style="width: 70%; height: auto;">
+        <p>Fig. 2 SET mitigation techniques applied.</p>
+    </div>
+
+    <p>
+        The results show that both mitigation techniques significantly improve circuit robustness.
+        Transistor Sizing provides the highest individual improvement, increasing robustness by
+        up to 2× at nominal voltage and nearly 3× under near-threshold operation. When combined
+        with Decoupling Cells, the techniques further enhance resilience to radiation effects.
+    </p>
+
+    <div class="charts charts--large">
+        <div class="chart">
+            <img src="images/research/mirror-2021/totalError.png"
+                 alt="SET robustness comparison with mitigation techniques">
+        </div>
+    </div>
+
+    <p>
+        Overall, the combined application of DCELL and Transistor Sizing achieved the best results,
+        reducing total error occurrence by more than 60% at nominal voltage and approximately 34%
+        under near-threshold operation. These results highlight the importance of circuit-level
+        mitigation strategies for reliable design in advanced FinFET technologies.
+    </p>
+
+            <ol class="reference">
+                <li>
+                    <a href="https://doi.org/10.1109/LATS53581.2021.9651889" target="_blank" >https://doi.org/10.1109/LATS2021</a>
+                </li>
+            </ol>
+            
+        </div>
+
+
+        <footer class="page-footer">
+            <div class="page-footer__inner">
+                Copyright &copy; 2021 Rafael Oliveira
+            </div>
+        </footer>
+
+        
+    </div>
+</body>
+</html>
