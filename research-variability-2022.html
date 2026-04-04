@@ -18,7 +18,7 @@
 
         <div class="titulo titulo-research">
             <span class="titulo__sobrenome ">Research</span>
-            <p class="titulo__profissao"> Published in 2020 <br>Vol 15 Nº 2 JICS</p>
+            <p class="titulo__profissao"> Published in 2022 <br>Vol 87, INTEGRATION, Pages 137-146</p>
         </div>
         
         <div class="main-menu-pages">
@@ -33,89 +33,45 @@
         </div>
 
         <div class="intro__title">
-            <h3>Xor Logic Gates</h3>
-            <p>Electrical Behavior and SET Impact</p>
+            <h3>XOR-based Full Adders</h3>
+            <p>Impact of process variability </p>
         </div>
 
         <div class="intro__body">
-            <p>	With the advance of computer systems, XOR gates design 
-                became essential to the arithmetic circuits. At nanometer 
-                nodes, despite the electrical characterization, designers 
-                must consider soft error impact on the circuits. The 
-                challenges change significantly as feature sizes are 
-                smaller, even for FinFET devices. The Single Event Transient
-                (SET) and their effects are dependent on the circuit topology. 
+            <p>
+                This work investigates the impact of process variability on Full Adder circuits,
+                analyzing delay and energy consumption under both nominal and near-threshold
+                voltage operation. As technology scales, variability effects become more pronounced,
+                directly impacting circuit reliability and performance.
             </p>
 
             <p>
-                In traditional planar devices, charges associated with the 
-                ion tracks colliding the silicon substrate are deposited in
-                the drain directly and then diffuse to the drain, as shown 
-                in Fig. 1 (a).
-                On bulk FinFET devices, the thin fin region has a tight 
-                connection to the substrate of the bulk FinFETs. This 
-                reduces the area of silicon available for the charge 
-                collection when compared with planar devices. In this case,
-                less deposited charges will be diffused in the FinFET drain
-                as illustrates Fig. 1 (b). For these reasons, the FinFET devices
-                are considered less sensitive to soft errors.
+                A set of traditional and XOR-based Full Adder topologies were evaluated, including
+                the adoption of Decoupling Cells as a mitigation technique. The analysis compares
+                different operating conditions, from standard nominal voltage to low-power
+                near-threshold scenarios.
             </p>
-
-            <div class="collectionDevices">
-                <img src="images/collectionDevices.png" alt="">
-                <p>Fig. 1 Charge collection method.</p>
-            </div>
 
             <p>
-                Thus, in this work, we evaluate the SET
-                susceptibility on nine XOR topologies, shown in Fig. 2.
-                The main goal is to discuss the 
-                influence of logic family, device technology and 
-                temperature, on the radiation robustness. Also, this work
-                explores the nominal and near-threshold operation of 
-                these XOR topologies. 
+                The results show that near-threshold operation enables significant power savings,
+                reducing energy consumption by up to 97% on average. However, this comes with
+                trade-offs, including delay penalties of up to 6.4× and increased sensitivity to
+                process variability. Among the evaluated designs, the Mirror Full Adder provides
+                the best performance at nominal voltage.
             </p>
 
-
-            <div class="xors">
-                <img src="images/xor.png" alt="">
-                <p>Fig. 2 XOR topologies explored in this work.</p>
-            </div>
-            <p>     
-                Results show that FinFET devices are significantly more 
-                robust to the radiation effects. Also, most PTL logic
-                XORs topologies present about 40% of the increase on 
-                the LET threshold. The dependence of temperature 
-                aggressively impacts the FinFET technology devices 
-                operating at near-threshold. Finally, the complete set 
-                of information provided in this work supports designers 
-                in choosing the most appropriate XOR topology according 
-                to the specific design requirements.</p>
-            
-            <div class="charts">
-
-                <div class="let-nominal-cmos chart">
-                    <img src="images/let_nominal_var_temp_cmos.png" alt="">
-                </div>
-                
-                <div class="let-nominal-finfet chart">
-                    <img src="images/let_nominal_var_temp_finfet.png" alt="">
-                </div>
-    
-                <div class="let-nt-cmos chart">
-                    <img src="images/let_nt_var_temp_cmos.png" alt="">
-                </div>
-    
-                <div class="let-nt-finfet chart">
-                    <img src="images/let_nt_var_temp_finfet.png" alt="">
-                </div>
-
-            </div>
+            <p>
+                XOR-based Full Adders demonstrated lower sensitivity to variability effects on power,
+                regardless of the operating voltage. Additionally, the use of Decoupling Cells proved
+                effective in mitigating variability impacts, reducing power consumption and improving
+                robustness across all evaluated circuits. These results highlight important trade-offs
+                between power efficiency, performance, and variability resilience in advanced designs.
+            </p>
             
 
             <ol class="reference">
                 <li>
-                    <a href="https://doi.org/10.29292/jics.v15i2.131" target="_blank" >https://doi.org/10.29292/JICS2020</a>
+                    <a href="https://doi.org/10.1016/j.vlsi.2022.06.008" target="_blank" >https://doi.org/10.1016/INTEGRATION2022</a>
                 </li>
             </ol>
                 
