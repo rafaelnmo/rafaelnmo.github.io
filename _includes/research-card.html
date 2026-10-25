@@ -1,0 +1,10 @@
+{%- assign r = include.item -%}
+<a class="card work reveal" href="{{ r.slug | append: '.html' | relative_url }}" data-topic="{{ r.topics }}">
+    <div class="work__media"><img src="{{ r.image | relative_url }}" alt="" loading="lazy"></div>
+    <div class="work__body">
+        <div class="work__meta"><span class="year">{{ r.year }}</span><span>{{ r.kind }}</span><span>{{ r.venue }}</span></div>
+        <h3>{{ r.title }}</h3>
+        <p>{{ r.summary }}</p>
+        <span class="work__more">Read summary &rarr;</span>
+    </div>
+</a>

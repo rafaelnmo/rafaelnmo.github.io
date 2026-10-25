@@ -1,0 +1,27 @@
+# Projects, in display order. Each entry needs a page with the same
+# name as its slug (e.g. projects-konshu.html) holding the project text.
+# The first two are featured on the home page.
+
+- slug: projects-konshu
+  tag: ASIC · 65 nm
+  title: KONSHU
+  summary: A low-power 32-bit RISC processor SoC with APB bus and on-chip SRAMs, implemented at the 65 nm node.
+  image: /images/projects/konshu/konshu.png
+
+- slug: projects-osiris_i
+  tag: ASIC · 130 nm
+  title: OSIRIS I
+  summary: A low-power 32-bit RISC core taken through an open-source flow on SkyWater 130 nm.
+  image: /images/projects/osiris_i/osiris_i.png
+
+- slug: projects-alu
+  tag: FPGA · VHDL
+  title: Matrix ALU
+  summary: An FPGA implementation of an ALU that operates on matrices, with FSM control and datapath.
+  image: /images/projects/alu/interface.png
+
+- slug: projects-23
+  tag: Game design
+  title: 23! Board Game
+  summary: An original strategy board game inspired by checkers, with weighted pieces.
+  image: /images/projects/game23/figura1.png

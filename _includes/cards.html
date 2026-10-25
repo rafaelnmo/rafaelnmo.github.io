@@ -1,0 +1,8 @@
+{%- comment -%} Numbered cards from a data list of {title, text}. {%- endcomment -%}
+{%- for c in include.items %}
+<article class="card reveal">
+    <span class="card__num">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
+    <h3>{{ c.title | escape }}</h3>
+    <p>{{ c.text }}</p>
+</article>
+{%- endfor %}

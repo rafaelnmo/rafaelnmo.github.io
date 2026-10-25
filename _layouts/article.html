@@ -1,0 +1,58 @@
+---
+layout: default
+---
+{%- comment -%}
+  Detail page for a research paper or project. Title, summary, venue and
+  DOI come from _data/research.yml or _data/projects.yml; the page file
+  itself only holds the article text and figures.
+{%- endcomment -%}
+{%- include find-item.html -%}
+{%- for it in items -%}
+  {%- if it.slug == item.slug -%}
+    {%- assign prev_index = forloop.index0 | minus: 1 -%}
+    {%- assign next_index = forloop.index0 | plus: 1 -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if prev_index >= 0 %}{% assign prev = items[prev_index] %}{% else %}{% assign prev = nil %}{% endif -%}
+{%- assign next = items[next_index] -%}
+{%- if kind == "research" -%}
+  {%- assign newer = "Newer" %}{% assign older = "Older" -%}
+{%- else -%}
+  {%- assign newer = "Previous" %}{% assign older = "Next" -%}
+{%- endif %}
+        <section class="page-head">
+            <div class="container" style="max-width: 824px;">
+                {% if kind == "research" -%}
+                <a class="breadcrumb" href="{{ '/research.html' | relative_url }}">{% include icon.html name="back" %} All research</a>
+                <div class="work__meta"><span class="year">{{ item.year }}</span><span>{{ item.kind }}</span><span>{{ item.venue }}</span></div>
+                {%- else -%}
+                <a class="breadcrumb" href="{{ '/projects.html' | relative_url }}">{% include icon.html name="back" %} All projects</a>
+                <div class="work__meta"><span class="year">{{ item.tag }}</span></div>
+                {%- endif %}
+                <h1>{{ item.title }}</h1>
+                <p>{{ item.summary }}</p>
+            </div>
+        </section>
+
+        <article class="container article">
+{{ content }}
+            {%- if kind == "research" %}
+
+            <div class="cite">
+                <div>
+                    <small>Published in {{ item.venue }}, {{ item.year }}</small>
+                    <strong>doi.org/{{ item.doi }}</strong>
+                </div>
+                <a class="btn" href="https://doi.org/{{ item.doi }}" target="_blank" rel="noopener">Read the paper {% include icon.html name="ext" %}</a>
+            </div>
+            {%- endif %}
+
+            <nav class="pager" aria-label="More">
+                {%- if prev %}
+                <a href="{{ prev.slug | append: '.html' | relative_url }}"><small>&larr; {{ newer }}</small><strong>{{ prev.title }}</strong></a>
+                {%- endif -%}
+                {%- if next %}
+                <a href="{{ next.slug | append: '.html' | relative_url }}"{% unless prev %} style="grid-column: 2;"{% endunless %}><small>{{ older }} &rarr;</small><strong>{{ next.title }}</strong></a>
+                {%- endif %}
+            </nav>
+        </article>
