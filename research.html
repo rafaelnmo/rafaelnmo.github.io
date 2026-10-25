@@ -2,126 +2,153 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research</title>
+    <title>Research · Rafael Oliveira</title>
+    <meta name="description" content="Publications by Rafael Oliveira on radiation effects, SET mitigation and process variability in FinFET combinational circuits.">
+    <meta name="author" content="Rafael Oliveira">
+    <link rel="canonical" href="https://rafaelnmo.github.io/research.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Research · Rafael Oliveira">
+    <meta property="og:description" content="Publications by Rafael Oliveira on radiation effects, SET mitigation and process variability in FinFET combinational circuits.">
+    <meta property="og:url" content="https://rafaelnmo.github.io/research.html">
+    <meta property="og:image" content="https://rafaelnmo.github.io/images/profile1.jpeg">
+    <meta name="theme-color" content="#0c0d10">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem("theme");
+                if (t) document.documentElement.setAttribute("data-theme", t);
+            } catch (e) {}
+            document.documentElement.classList.add("js");
+        })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
-
 </head>
 <body>
-    <div class="container">
+    <a class="skip-link" href="#main">Skip to content</a>
 
-        <div class="titulo titulo-research">
-            <span class="titulo__sobrenome ">Research</span>
-            <p class="titulo__profissao">Radiation effects and variability <br> in combinational cells</p>
-        </div>
-        
-        <div class="main-menu-pages">
-            <nav class="menu">
-                <ul class="nav-menu">
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a class="brand" href="index.html" aria-label="Rafael Oliveira, home">
+                <span class="brand__mark">RO</span>
+                <span>Rafael Oliveira</span>
+            </a>
+            <nav class="nav" aria-label="Main">
+                <ul class="nav__links" id="nav-links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="research.html">Research</a></li>
+                    <li><a href="research.html" aria-current="page">Research</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="experience.html">Experience</a></li>
                 </ul>
+                <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode">
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+                </button>
+                <button class="icon-btn nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+                </button>
             </nav>
         </div>
+    </header>
 
-        <section class="intro__research">
-            <h3>Portifolio</h3>
-            <p>Published articles</p>
-        </section>
+    <main id="main">
 
-        <section class="flex">
-
-            <a href="research-fa-2025.html">
-                <article class="xor__article">
-                    <figure class= "xor__media">
-                        <img src="images/research/fa-2025/fa-dut.png"  style="width: 350px; height: auto;" alt="9 XOR circuit designers">
-                    </figure>
-                    <h3 class="archive__item-title">Full Adders</h3>
-                    <p>SET Mitigation Techniques for FAs at 7 nm Technology node</p>
-                </article>
-            </a>
-
-            <a href="research-fa-2022.html">
-                <article class="mirror__article">
-                    <figure class="mirror__media">
-                        <img src="images/research/fa-2022/critical_nodes.png" alt="Mirror Full Adder circuit design">
-                    </figure>
-                    <h3 class="archive__item-title">Full Adders</h3>
-                    <p>SET Mitigation Techniques for Mirror and Hybrid Full Adder</p>
-                </article>
-            </a>
-
-
-            <a href="research-variability-2022.html">
-                <article class="xor__article">
-                    <figure class= "xor__media">
-                        <img src="images/research/variability-2022/xorv8.png"  style="width: 350px; height: auto;" alt="9 XOR circuit designers">
-                    </figure>
-                    <h3 class="archive__item-title">XOR-based Full Adders </h3>
-                    <p>Impact of process variability </p>
-                </article>
-            </a>
-
-            <a href="research-mirror-2021.html">
-                <article class="mirror__article">
-                    <figure class= "mirror__media">
-                        <img src="images/research/mirror-2021/letth_NTV.png" alt="Mirror Full Adder circuit design">
-                    </figure>
-                    <h3 class="archive__item-title">Mirror Full Adder</h3>
-                    <p>SET Mitigation Techniques on a Mirror Full Adder</p>
-                </article>
-            </a>
-
-            <a href="research-mirror-2020.html">
-                <article class="mirror__article">
-                    <figure class="mirror__media">
-                        <img src="images/research/mirror-2020/mirror.png" alt="Mirror Full Adder circuit design">
-                    </figure>
-                    <h3 class="archive__item-title">Mirror Full Adder</h3>
-                    <p>SET Susceptibility on a Mirror Full Adder</p>
-                </article>
-            </a>
-
-            <a href="research-xor-2020.html">
-                <article class="xor__article">
-                    <figure class= "xor__media">
-                        <img src="images/research/xor-2020/test.png" alt="XOR circuit designers">
-                    </figure>
-                    <h3 class="archive__item-title">Xor Logic Gates</h3>
-                    <p>Electrical Behavior and SET Impact</p>
-                </article>
-            </a>
-
-            <a href="research-xor-2019.html">
-                <article class="xor__article">
-                    <figure class="xor__media">
-                        <img src="images/research/xor-2019/xor.png"  style="width: 350px; height: auto;" alt="XOR circuit designers">
-                    </figure>
-                    <h3 class="archive__item-title">Xor Logic Gates</h3>
-                    <p>Radiation Effects at 16 nm XOR gates</p>
-                </article>
-            </a>
-
-
-        </section>
-        
-
-        <footer class="page-footer">
-            <div class="page-footer__inner">
-                Copyright &copy; 2021 Rafael Oliveira
+        <section class="page-head">
+            <div class="container">
+                <span class="eyebrow">Research</span>
+                <h1>Radiation effects &amp; variability in combinational cells</h1>
+                <p>Peer-reviewed work on single-event transients (SET), process variability and hardening techniques for arithmetic circuits in FinFET technologies.</p>
             </div>
-        </footer>
+        </section>
 
-        
-    </div>
+        <section class="container" style="padding-bottom: clamp(56px, 9vw, 96px);">
+            <div class="filters" role="group" aria-label="Filter by topic"><button type="button" data-filter="all" aria-pressed="true">All</button><button type="button" data-filter="full-adders" aria-pressed="false">Full adders</button><button type="button" data-filter="xor" aria-pressed="false">XOR gates</button><button type="button" data-filter="mitigation" aria-pressed="false">SET mitigation</button><button type="button" data-filter="variability" aria-pressed="false">Variability</button></div>
+            <div class="grid grid--3">
+
+                <a class="card work reveal" href="research-fa-2025.html" data-topic="full-adders mitigation">
+                    <div class="work__media"><img src="images/research/fa-2025/fa-dut.png" alt="" loading="lazy"></div>
+                    <div class="work__body">
+                        <div class="work__meta"><span class="year">2025</span><span>Journal</span><span>Electronics (MDPI)</span></div>
+                        <h3>SET Mitigation Techniques for Full Adders at 7 nm</h3>
+                        <p>Mirror, Hybrid, TGA and TFA full adders under nominal and near-threshold operation, hardened with decoupling cells and transistor sizing.</p>
+                        <span class="work__more">Read summary &rarr;</span>
+                    </div>
+                </a>
+                <a class="card work reveal" href="research-fa-2022.html" data-topic="full-adders mitigation">
+                    <div class="work__media"><img src="images/research/fa-2022/critical_nodes.png" alt="" loading="lazy"></div>
+                    <div class="work__body">
+                        <div class="work__meta"><span class="year">2022</span><span>Conference</span><span>SBCCI 2022 · IEEE</span></div>
+                        <h3>SET Mitigation for Mirror and Hybrid Full Adders</h3>
+                        <p>Decoupling cells and transistor sizing applied to two full adder topologies in 7 nm FinFET.</p>
+                        <span class="work__more">Read summary &rarr;</span>
+                    </div>
+                </a>
+                <a class="card work reveal" href="research-variability-2022.html" data-topic="full-adders xor variability">
+                    <div class="work__media"><img src="images/research/variability-2022/xorv8.png" alt="" loading="lazy"></div>
+                    <div class="work__body">
+                        <div class="work__meta"><span class="year">2022</span><span>Journal</span><span>INTEGRATION, Vol. 87</span></div>
+                        <h3>Process Variability in XOR-based Full Adders</h3>
+                        <p>Delay and energy of traditional and XOR-based full adders under process variability, at nominal and near-threshold voltage.</p>
+                        <span class="work__more">Read summary &rarr;</span>
+                    </div>
+                </a>
+                <a class="card work reveal" href="research-mirror-2021.html" data-topic="full-adders mitigation">
+                    <div class="work__media"><img src="images/research/mirror-2021/letth_NTV.png" alt="" loading="lazy"></div>
+                    <div class="work__body">
+                        <div class="work__meta"><span class="year">2021</span><span>Conference</span><span>IEEE LATS 2021</span></div>
+                        <h3>SET Mitigation Techniques on a Mirror Full Adder</h3>
+                        <p>Evaluating hardening techniques for the Mirror full adder at nominal and near-threshold voltage.</p>
+                        <span class="work__more">Read summary &rarr;</span>
+                    </div>
+                </a>
+                <a class="card work reveal" href="research-mirror-2020.html" data-topic="full-adders">
+                    <div class="work__media"><img src="images/research/mirror-2020/mirror.png" alt="" loading="lazy"></div>
+                    <div class="work__body">
+                        <div class="work__meta"><span class="year">2020</span><span>Conference</span><span>IEEE ICECS 2020</span></div>
+                        <h3>SET Susceptibility on a Mirror Full Adder</h3>
+                        <p>Node-by-node radiation sensitivity of the Mirror full adder in 7 nm FinFET.</p>
+                        <span class="work__more">Read summary &rarr;</span>
+                    </div>
+                </a>
+                <a class="card work reveal" href="research-xor-2020.html" data-topic="xor">
+                    <div class="work__media"><img src="images/research/xor-2020/test.png" alt="" loading="lazy"></div>
+                    <div class="work__body">
+                        <div class="work__meta"><span class="year">2020</span><span>Journal</span><span>JICS, Vol. 15 Nº 2</span></div>
+                        <h3>XOR Gates: Electrical Behavior and SET Impact</h3>
+                        <p>Nine XOR topologies across CMOS and FinFET, logic families, temperature and near-threshold operation.</p>
+                        <span class="work__more">Read summary &rarr;</span>
+                    </div>
+                </a>
+                <a class="card work reveal" href="research-xor-2019.html" data-topic="xor">
+                    <div class="work__media"><img src="images/research/xor-2019/xor.png" alt="" loading="lazy"></div>
+                    <div class="work__body">
+                        <div class="work__meta"><span class="year">2019</span><span>Conference</span><span>IEEE ICECS 2019</span></div>
+                        <h3>Radiation Effects on 16 nm XOR Gates</h3>
+                        <p>Single-event transient robustness of XOR gate topologies at the 16 nm node.</p>
+                        <span class="work__more">Read summary &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <span>&copy; <span id="year">2026</span> Rafael Oliveira · Barcelona, Spain</span>
+            <div class="socials">
+                <a href="mailto:rafaelnevesmello@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></a>
+                <a href="https://www.linkedin.com/in/rafaelnmo" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0Z"/></svg></a>
+                <a href="https://github.com/rafaelnmo" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
 </body>
 </html>

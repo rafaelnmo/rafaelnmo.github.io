@@ -2,481 +2,301 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafael Oliveira</title>
+    <title>Rafael Oliveira · Physical Design Engineer</title>
+    <meta name="description" content="Rafael Oliveira, Physical Design and STA Engineer in Barcelona, Spain. ASIC implementation, timing closure and fault-tolerant circuit research.">
+    <meta name="author" content="Rafael Oliveira">
+    <link rel="canonical" href="https://rafaelnmo.github.io/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rafael Oliveira · Physical Design Engineer">
+    <meta property="og:description" content="Rafael Oliveira, Physical Design and STA Engineer in Barcelona, Spain. ASIC implementation, timing closure and fault-tolerant circuit research.">
+    <meta property="og:url" content="https://rafaelnmo.github.io/index.html">
+    <meta property="og:image" content="https://rafaelnmo.github.io/images/profile1.jpeg">
+    <meta name="theme-color" content="#0c0d10">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem("theme");
+                if (t) document.documentElement.setAttribute("data-theme", t);
+            } catch (e) {}
+            document.documentElement.classList.add("js");
+        })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
-
 </head>
 <body>
-    <div class="container">
+    <a class="skip-link" href="#main">Skip to content</a>
 
-        <header class="header">
-            <div class="profile-image">
-                <img src="images/profile1.jpeg">
-            </div>
-        </header>
-
-        <div class="titulo">
-            <span class="titulo__nome">Rafael</span><br>
-            <span class="titulo__sobrenome">Oliveira</span>
-            <p class="titulo__profissao">Physical Design Engineer &amp; STA Engineer</p>
-        </div>
-
-        <div class="social-medias">
-            <a href="https://www.facebook.com/rafa.nmo" target="_blank">
-                <img src="./images/facebook.svg" class="titulo__social-media">
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a class="brand" href="index.html" aria-label="Rafael Oliveira, home">
+                <span class="brand__mark">RO</span>
+                <span>Rafael Oliveira</span>
             </a>
-            <a href="https://codepen.io/karto1000" target="_blank">
-                <img src="./images/codepen.svg" class="titulo__social-media">
-            </a>    
-            <a href="https://github.com/rafaelnmo" target="_blank">
-                <img src="./images/github.svg" class="titulo__social-media">
-            </a>
-        </div>
-        
-        <div class="main-menu">
-            <nav class="menu">
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
+            <nav class="nav" aria-label="Main">
+                <ul class="nav__links" id="nav-links">
+                    <li><a href="index.html" aria-current="page">Home</a></li>
                     <li><a href="research.html">Research</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="experience.html">Experience</a></li>
                 </ul>
+                <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode">
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+                </button>
+                <button class="icon-btn nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+                </button>
             </nav>
         </div>
+    </header>
 
-        <div class="contacts">
-            <div class="location">
-                <h3>Location</h3>
-                <p>Florianópolis, SC</p>
+    <main id="main">
+
+        <section class="hero">
+            <div class="container hero__inner">
+                <div>
+                    <span class="eyebrow">Physical Design · STA · Fault tolerance</span>
+                    <h1>Rafael <span class="accent">Oliveira</span></h1>
+                    <p class="hero__role">Physical Design &amp; STA Engineer taking silicon from netlist to GDSII, and researching how to keep it reliable.</p>
+                    <div class="hero__meta">
+                        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Barcelona · Spain</span>
+                        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg> 180 nm → 7 nm FinFET</span>
+                    </div>
+                    <div class="actions">
+                        <a class="btn btn--primary" href="mailto:rafaelnevesmello@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg> Get in touch</a>
+                        <a class="btn" href="https://www.linkedin.com/in/rafaelnmo" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0Z"/></svg> LinkedIn</a>
+                        <a class="btn" href="https://github.com/rafaelnmo" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg> GitHub</a>
+                    </div>
+                </div>
+                <div class="hero__photo">
+                    <img src="images/profile1.jpeg" alt="Portrait of Rafael Oliveira" width="1365" height="1365">
+                </div>
             </div>
-            <!--
-            <div class="phone">
-                <h3>Phone</h3>
-                <p>(11) 973112548</p>
+        </section>
+
+        <section class="section" id="about">
+            <div class="container">
+
+            <div class="section__head reveal">
+                <div>
+                    <span class="section__label">01 / About</span>
+                    <h2>Physical design engineer &amp; researcher</h2>
+                    <p>Microelectronics and nanotechnology since 2018.</p>
+                </div>
             </div>
-            -->
-            <div class="web">
-                <h3>Web</h3>
-                <p><a href="https://www.linkedin.com/in/rafaelnmo" target="_blank">Linkedin</p>
+                <div class="about">
+                    <div class="about__text reveal">
+                        <p>I implement ASICs end to end, from synthesized netlist to signoff-clean GDSII, with a focus on timing-driven design closure.</p>
+                        <p>I hold a B.Sc. in Computer Science from the Federal University of Santa Catarina (UFSC), where I am also completing my M.Sc. My research targets the mitigation of process variability and radiation-induced failures in combinational circuits, and I work on radiation-hardened standard cell libraries and low-power RISC-V ASICs.</p>
+                        <p>I have hands-on experience across the full RTL-to-GDSII flow with industry-standard EDA tools, in nodes from 180 nm down to 12 nm, and have published in international journals and conferences on digital design and fault tolerance.</p>
+                        <p>I founded <strong>OSIRIS</strong>, a research group on RISC-V microarchitecture, and created <a class="link-arrow" href="https://www.vlsibrasil.com.br" target="_blank" rel="noopener">VLSI Brasil</a>, a blog sharing semiconductor knowledge in Portuguese.</p>
+                    </div>
+                    <div class="stats reveal">
+                        <div class="stat"><strong>7</strong><span>peer-reviewed publications</span></div>
+                        <div class="stat"><strong>2018</strong><span>doing VLSI research since</span></div>
+                        <div class="stat"><strong>180→7</strong><span>nm, technology nodes worked on</span></div>
+                        <div class="stat"><strong>2</strong><span>processor ASICs implemented</span></div>
+                    </div>
+                </div>
             </div>
-            <div class="email">
-                <h3>Email</h3>
-                <p><a href="mailto:rafaelnevesmello@gmail.com">@rafaeloliveira</a></p>
+        </section>
+
+        <section class="section section--alt" id="expertise">
+            <div class="container">
+
+            <div class="section__head reveal">
+                <div>
+                    <span class="section__label">02 / Expertise</span>
+                    <h2>What I actually build</h2>
+                    <p>From floorplan to tapeout, plus the research that makes circuits survive radiation.</p>
+                </div>
             </div>
-        </div>
+                <div class="grid grid--3">
 
+                <article class="card reveal">
+                    <span class="card__num">01</span>
+                    <h3>ASIC Physical Design</h3>
+                    <p>End-to-end backend implementation from synthesized netlist to GDSII across 180 nm to 12 nm: floorplanning, placement, CTS, routing and physical optimization.</p>
+                </article>
 
-        
+                <article class="card reveal">
+                    <span class="card__num">02</span>
+                    <h3>Timing Closure &amp; STA</h3>
+                    <p>Multi-mode multi-corner (MMMC) timing analysis and closure with PrimeTime and Tempus. Setup/hold fixing, ECOs and congestion-aware optimization.</p>
+                </article>
 
-        <div class="intro__title">
-            <h3>Intro</h3>
-            <p>Physical Design Engineer & Researcher.</p>
-        </div>
+                <article class="card reveal">
+                    <span class="card__num">03</span>
+                    <h3>Physical Verification</h3>
+                    <p>DRC, LVS, antenna and density checks with industry tools, delivering signoff-quality layouts in advanced technologies.</p>
+                </article>
 
-        <div class="intro__body">
-            <p>
-                I hold a Bachelor of Science in Computer Science from the Federal University of Santa Catarina (UFSC)
-                and am currently completing my Master of Science in Computer Science at UFSC. Since 2018, I have conducted
-                research in microelectronics and nanotechnology, focusing on mitigating variability and radiation-induced
-                circuit failures.
+                <article class="card reveal">
+                    <span class="card__num">04</span>
+                    <h3>Fault-Tolerant Design</h3>
+                    <p>Radiation-resilient combinational circuits and robust standard cell libraries for reliability in harsh environments.</p>
+                </article>
 
-                My expertise includes integrated circuit physical design and fault-tolerant combinational circuit design,
-                with hands-on experience across the full RTL-to-GDSII flow using industry-standard EDA tools. I also work on
-                radiation-hardened standard cell libraries and low-power RISC-V ASIC solutions.
+                <article class="card reveal">
+                    <span class="card__num">05</span>
+                    <h3>RISC-V &amp; ASIC Research</h3>
+                    <p>Founder and technical lead of OSIRIS: RISC-V microarchitecture, RTL design and ASIC implementation with open-source flows (SkyWater 130 nm / 65 nm).</p>
+                </article>
 
-                I have extensive experience in advanced-node ASIC implementation (180nm to 12nm), electrical characterization,
-                and timing-driven design closure. I have authored publications in international journals and conferences in
-                the fields of digital design and fault tolerance.
-
-                I am the founder of OSIRIS, a research group focused on RISC-V microarchitecture development, and creator of
-                VLSI Brasil, a blog dedicated to semiconductor knowledge sharing in Portuguese.
-            </p>
-        </div>
-
-        <div class="expertise__title">
-            <h3>Expertise</h3>
-            <p>What I actually build.</p>
-        </div>
-
-        <div class="expertise expertise__one">
-            <div class="ability__number">
-                <h3>01</h3>
+                <article class="card reveal">
+                    <span class="card__num">06</span>
+                    <h3>Automation &amp; Scripting</h3>
+                    <p>Flow automation and tool integration in TCL and Python to boost productivity and enable scalable design methodologies.</p>
+                </article>
+                </div>
             </div>
-            <div class="ability__body">
-                <h3>ASIC Physical Design</h3>
-                <p>
-                    End-to-end backend implementation from synthesized netlist to GDSII. Experience across advanced nodes
-                    (180nm to 12nm), including floorplanning, placement, CTS, routing, and physical optimization.
-                </p>
+        </section>
+
+        <section class="section" id="skills">
+            <div class="container">
+
+            <div class="section__head reveal">
+                <div>
+                    <span class="section__label">03 / Toolbox</span>
+                    <h2>Core tools &amp; technologies</h2>
+                    <p>The flows and languages I use day to day.</p>
+                </div>
             </div>
-        </div>
+                <div class="grid grid--2" style="gap: 36px 48px;">
 
-        <div class="expertise expertise__two">
-            <div class="ability__number">
-                <h3>02</h3>
+                <div class="skill-group reveal">
+                    <h3>Implementation &amp; signoff</h3>
+                    <ul class="tags"><li class="tag tag--accent">Synopsys ICC2</li><li class="tag tag--accent">PrimeTime</li><li class="tag">Cadence Innovus</li><li class="tag">Tempus</li><li class="tag">DRC / LVS</li><li class="tag">SPICE</li></ul>
+                </div>
+
+                <div class="skill-group reveal">
+                    <h3>Methodology</h3>
+                    <ul class="tags"><li class="tag">SDC</li><li class="tag">MMMC</li><li class="tag">UPF / Low power</li><li class="tag">CTS</li><li class="tag">ECO flows</li><li class="tag">RTL-to-GDSII</li></ul>
+                </div>
+
+                <div class="skill-group reveal">
+                    <h3>Languages &amp; tools</h3>
+                    <ul class="tags"><li class="tag">TCL</li><li class="tag">Python</li><li class="tag">C / C++</li><li class="tag">Git</li><li class="tag">Subversion</li><li class="tag">Linux</li></ul>
+                </div>
+
+                <div class="skill-group reveal">
+                    <h3>Spoken</h3>
+                    <ul class="tags"><li class="tag">Portuguese (native)</li><li class="tag">English (fluent)</li></ul>
+                </div>
+                </div>
             </div>
-            <div class="ability__body">
-                <h3>Timing Closure & STA</h3>
-                <p>
-                    Multi-mode multi-corner (MMMC) timing analysis and closure using PrimeTime and Tempus. Setup/hold fixing,
-                    ECO implementation, and congestion-aware optimization.
-                </p>
+        </section>
+
+        <section class="section section--alt" id="research">
+            <div class="container">
+
+            <div class="section__head section__head--row reveal">
+                <div>
+                    <span class="section__label">04 / Research</span>
+                    <h2>Latest publications</h2>
+                    <p>Radiation effects and variability in combinational cells.</p>
+                </div>
+                <a class="link-arrow" href="research.html">All publications <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
             </div>
-        </div>
+                <div class="grid grid--3">
 
-        <div class="expertise expertise__three">
-            <div class="ability__number">
-                <h3>03</h3>
+                <a class="card work reveal" href="research-fa-2025.html" data-topic="full-adders mitigation">
+                    <div class="work__media"><img src="images/research/fa-2025/fa-dut.png" alt="" loading="lazy"></div>
+                    <div class="work__body">
+                        <div class="work__meta"><span class="year">2025</span><span>Journal</span><span>Electronics (MDPI)</span></div>
+                        <h3>SET Mitigation Techniques for Full Adders at 7 nm</h3>
+                        <p>Mirror, Hybrid, TGA and TFA full adders under nominal and near-threshold operation, hardened with decoupling cells and transistor sizing.</p>
+                        <span class="work__more">Read summary &rarr;</span>
+                    </div>
+                </a>
+                <a class="card work reveal" href="research-fa-2022.html" data-topic="full-adders mitigation">
+                    <div class="work__media"><img src="images/research/fa-2022/critical_nodes.png" alt="" loading="lazy"></div>
+                    <div class="work__body">
+                        <div class="work__meta"><span class="year">2022</span><span>Conference</span><span>SBCCI 2022 · IEEE</span></div>
+                        <h3>SET Mitigation for Mirror and Hybrid Full Adders</h3>
+                        <p>Decoupling cells and transistor sizing applied to two full adder topologies in 7 nm FinFET.</p>
+                        <span class="work__more">Read summary &rarr;</span>
+                    </div>
+                </a>
+                <a class="card work reveal" href="research-variability-2022.html" data-topic="full-adders xor variability">
+                    <div class="work__media"><img src="images/research/variability-2022/xorv8.png" alt="" loading="lazy"></div>
+                    <div class="work__body">
+                        <div class="work__meta"><span class="year">2022</span><span>Journal</span><span>INTEGRATION, Vol. 87</span></div>
+                        <h3>Process Variability in XOR-based Full Adders</h3>
+                        <p>Delay and energy of traditional and XOR-based full adders under process variability, at nominal and near-threshold voltage.</p>
+                        <span class="work__more">Read summary &rarr;</span>
+                    </div>
+                </a>
+                </div>
             </div>
-            <div class="ability__body">
-                <h3>Physical Verification</h3>
-                <p>
-                    DRC, LVS, antenna, and density checks using industry tools. Strong experience ensuring signoff-quality
-                    layouts in advanced technologies.
-                </p>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="container">
+
+            <div class="section__head section__head--row reveal">
+                <div>
+                    <span class="section__label">05 / Projects</span>
+                    <h2>Selected projects</h2>
+                    <p>Processors taken to silicon, and a few side quests.</p>
+                </div>
+                <a class="link-arrow" href="projects.html">All projects <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
             </div>
-        </div>
+                <div class="grid grid--2">
 
-        <div class="expertise expertise__four">
-            <div class="ability__number">
-                <h3>04</h3>
+                <a class="card work reveal" href="projects-konshu.html">
+                    <div class="work__media"><img src="images/projects/konshu/konshu.png" alt="" loading="lazy"></div>
+                    <div class="work__body">
+                        <div class="work__meta"><span class="year">ASIC · 65 nm</span></div>
+                        <h3>KONSHU</h3>
+                        <p>A low-power 32-bit RISC processor SoC with APB bus and on-chip SRAMs, implemented at the 65 nm node.</p>
+                        <span class="work__more">View project &rarr;</span>
+                    </div>
+                </a>
+                <a class="card work reveal" href="projects-osiris_i.html">
+                    <div class="work__media"><img src="images/projects/osiris_i/osiris_i.png" alt="" loading="lazy"></div>
+                    <div class="work__body">
+                        <div class="work__meta"><span class="year">ASIC · 130 nm</span></div>
+                        <h3>OSIRIS I</h3>
+                        <p>A low-power 32-bit RISC core taken through an open-source flow on SkyWater 130 nm.</p>
+                        <span class="work__more">View project &rarr;</span>
+                    </div>
+                </a>
+                </div>
             </div>
-            <div class="ability__body">
-                <h3>Fault-Tolerant Design</h3>
-                <p>
-                    Design of radiation-resilient combinational circuits and development of robust standard cell libraries
-                    targeting reliability in harsh environments.
-                </p>
+        </section>
+
+        <section class="section section--alt" id="contact">
+            <div class="container contact reveal">
+                <span class="section__label">06 / Contact</span>
+                <h2>Let&rsquo;s talk silicon</h2>
+                <p>Open to conversations about physical design, timing closure, reliability research and RISC-V.</p>
+                <div class="actions">
+                    <a class="btn btn--primary" href="mailto:rafaelnevesmello@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg> rafaelnevesmello@gmail.com</a>
+                    <a class="btn" href="https://www.linkedin.com/in/rafaelnmo" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0Z"/></svg> LinkedIn</a>
+                </div>
             </div>
-        </div>
+        </section>
+    </main>
 
-        <div class="expertise expertise__five">
-            <div class="ability__number">
-                <h3>05</h3>
-            </div>
-            <div class="ability__body">
-                <h3>RISC-V & ASIC Research</h3>
-                <p>
-                    Founder and technical lead of OSIRIS. Work includes RISC-V microarchitecture development, RTL design,
-                    and ASIC implementation using open-source flows (SkyWater 130nm / 65nm).
-                </p>
-            </div>
-        </div>
-
-        <div class="expertise expertise__six">
-            <div class="ability__number">
-                <h3>06</h3>
-            </div>
-            <div class="ability__body">
-                <h3>Automation & Scripting</h3>
-                <p>
-                    Flow automation and tool integration using TCL and Python to improve productivity and enable scalable
-                    design methodologies.
-                </p>
-            </div>
-        </div>
-
-
-        <div class="skills__title">
-            <h3>Skills</h3>
-            <p>Core tools & technologies.</p>
-        </div>
-
-        <div class="skills__one">
-            <h3><span>90%</span> Synopsys Tools</h3>
-            <div class="skills__bar">
-                <div class="skills__progress" style="width:90%"></div>
-            </div><br>
-        </div>
-
-        <div class="skills__two">
-            <h3><span>65%</span> Cadence Tools</h3>
-            <div class="skills__bar">
-                <div class="skills__progress" style="width:65%"></div>
-            </div><br>
-        </div>
-
-        <div class="skills__three">
-            <h3><span>90%</span> ICC2 (PnR, CTS, Routing)</h3>
-            <div class="skills__bar">
-                <div class="skills__progress" style="width:90%"></div>
-            </div><br>
-        </div>
-
-        <div class="skills__four">
-            <h3><span>85%</span> PrimeTime (MMMC, STA, ECO) </h3>
-            <div class="skills__bar">
-                <div class="skills__progress" style="width:85%"></div>
-            </div><br>
-        </div>
-
-        <div class="skills__five">
-            <h3><span>90%</span> SDC / MMMC</h3>
-            <div class="skills__bar">
-                <div class="skills__progress" style="width:90%"></div>
-            </div><br>
-        </div>
-
-        <div class="skills__six">
-            <h3><span>85%</span> UPF / Low Power </h3>
-            <div class="skills__bar">
-                <div class="skills__progress" style="width:85%"></div>
-            </div><br>
-        </div>
-
-        <div class="skills__seven">
-            <h3><span>90%</span> TCL / Python</h3>
-            <div class="skills__bar">
-                <div class="skills__progress" style="width:90%"></div>
-            </div><br>
-        </div>
-
-
-        <div class="skills__eight">
-            <h3><span>95%</span> Git / Subversion</h3>
-            <div class="skills__bar">
-                <div class="skills__progress" style="width:95%"></div>
-            </div><br>
-        </div>
-
-        <div class="skills__nine">
-            <h3><span>85%</span> SPICE </h3>
-            <div class="skills__bar">
-                <div class="skills__progress" style="width:85%"></div>
-            </div><br>
-        </div>
-
-
-        <div class="skills__ten">
-            <h3><span>60%</span> C/C++</h3>
-            <div class="skills__bar">
-                <div class="skills__progress" style="width:60%"></div>
-            </div><br>
-        </div>
-
-        <div class="skills__eleven">
-            <h3><span>100%</span> Portuguese (Native)</h3>
-            <div class="skills__bar">
-                <div class="skills__progress" style="width:100%"></div>
-            </div><br>
-        </div>
-
-        <div class="skills__twelve">
-            <h3><span>90%</span> English (Fluent)</h3>
-            <div class="skills__bar">
-                <div class="skills__progress" style="width:90%"></div>
-            </div><br>
-        </div>
-
-
-
-
-
-
-
-            <!--
-
-
-
-        
-        <div class="intro__title">
-            <h3>Intro</h3>
-            <p>What I am all about.</p>
-        </div>
-
-        <div class="intro__body">
-            <p>
-
-                I hold a Bachelor of Science in Computer Science from the Federal University of Santa Catarina
-                (UFSC) and am currently completing my Master of Science in Computer Science at UFSC. Since
-                2018, I have conducted research in microelectronics and nanotechnology, focusing on mitigating
-                the effects of variability and radiation-induced circuit failures. My expertise includes integrated
-                circuit physical design implementation and fault-tolerant combinational circuits design, with
-                hands-on experience across the RTL-to-GDS design flow using industry-standard EDA tools. I am
-                also involved in the development of radiation-resistant standard cell libraries and low-power
-                RISC-V ASIC solutions.
-
-                My professional background includes 
-                extensive experience in RTL-GDS integrated circuit projects and electrical characterization 
-                in cutting-edge nanometer technologies. My primary areas of expertise revolve around 
-                Digital Circuit Design and the development of Fault-Tolerant Combinational Circuits. 
-                I have authored and published articles on these subjects in prestigious journals and conferences.
-                In addition to my research work, I am the founder of OSIRIS, a dedicated research group 
-                focused on advancing RISC-V microarchitectures. Furthermore, I established VLSI Brasil, a 
-                blog dedicated to sharing semiconductor industry insights and knowledge in the Portuguese 
-                language. My passion lies in pushing the boundaries of digital circuitry, and I'm dedicated 
-                to contributing valuable research to this ever-evolving field.
-            </p>
-        </div>
-
-            
-        <div class="expertise__title">
-            <h3>Expertise</h3>
-            <p>Luke Skywalker would be jealous.</p>
-        </div>
-                    
-        <div class="expertise expertise__one">
-            <div class="ability__number">
-                <h3>01</h3>
-            </div>
-            <div class="ability__body">
-                <h3>HTML5</h3>
-                <p>Solid skills on writing semantic HTML with conventions and best practices.
-                    Great undesrtand on forms and validations. Experience on several projects 
-                    based on accessibility and SEO techniques.
-                </p>
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <span>&copy; <span id="year">2026</span> Rafael Oliveira · Barcelona, Spain</span>
+            <div class="socials">
+                <a href="mailto:rafaelnevesmello@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></a>
+                <a href="https://www.linkedin.com/in/rafaelnmo" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0Z"/></svg></a>
+                <a href="https://github.com/rafaelnmo" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg></a>
             </div>
         </div>
+    </footer>
 
-        <div class="expertise expertise__two">
-            <div class="ability__number ">
-                <h3>02</h3>
-            </div>
-            <div class="ability__body">
-                <h3>Advanced CSS</h3>
-                <p>Depth knowledge on layout techniques such as floats, flexbox, grid layout and
-                    positioning. Great understand on responsive design, media queries and modular CSS.  
-                </p>
-            </div>
-        </div>
-
-        <div class="expertise expertise__three">
-            <div class="ability__number">
-                <h3>03</h3>
-            </div>
-            <div class="ability__body">
-                <h3>JavaScript/JQuery</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum nesciunt provident 
-                    laudantium temporibus magni labore ipsam quam quis, laborum ipsa est recusandae pariatur 
-                    officia, distinctio nisi aliquam beatae tenetur! 
-                </p>
-            </div>
-        </div>
-
-        <div class="expertise expertise__four">
-            <div class="ability__number">
-                <h3>04</h3>
-            </div>
-            <div class="ability__body">
-                <h3>React and React Native</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio laboriosam 
-                    incidunt quod dicta saepe odio ipsum, nihil, ab deserunt tempore quidem et nisi 
-                    odit excepturi impedit corrupti tempora possimus pariatur!Lorem
-                </p>
-            </div>
-        </div>
-
-        <div class="expertise expertise__five">
-            <div class="ability__number">
-                <h3>05</h3>
-            </div>
-            <div class="ability__body">
-                <h3>Kotlin</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis vel quia aspernatur 
-                    qui quis provident ipsa magnam, minus recusandae vitae, blanditiis quaerat dolor ducimus 
-                    sint obcaecati saepe.
-                </p>
-            </div>
-        </div>
-
-        <div class="expertise expertise__six">
-            <div class="ability__number">
-                <h3>06</h3>
-            </div>
-            <div class="ability__body">
-                <h3>Wordpress</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum praesentium accusantium 
-                    ad corrupti necessitatibus quibusdam sed, dignissimos inventore nesciunt. Illum 
-                    exercitationem, nisi quae maxime labore cumque non incidunt.
-                </p>
-            </div>
-        </div>
-           
-
-        <div class="skills__title">
-            <h3>Skills</h3>
-            <p>Progress bars, anyone?</p>
-        </div>
-
-        <div class="skills__one">
-            <h3><span>90%</span> SVN</h3>
-            <div class="skills__bar">
-                <div class="skills__progress" style="height:0.2em;width:90%"></div>
-            </div><br>
-        </div>
-
-        <div class="skills__two">
-            <h3><span>95%</span> Git</h3>
-            <div class="skills__bar">
-                <div class="skills__progress" style="height:0.2em;width:95%"></div>
-            </div><br>
-        </div>
-
-
-
-        <div class="skills__three">
-            <h3><span>90%</span> English</h3>
-            <div class="skills__bar">
-                <div class="skills__progress" style="height:0.2em;width:90%"></div>
-            </div><br>
-        </div>
-
-        <div class="skills__four">
-            <h3><span>55%</span> SEO</h3>
-            <div class="skills__bar">
-                <div class="skills__progress" style="height:0.2em;width:55%"></div>
-            </div><br>
-        </div>
-
-        <div class="skills__five">
-            <h3><span>65%</span> LaTeX</h3>
-            <div class="skills__bar">
-                <div class="skills__progress" style="height:0.2em;width:65%"></div>
-            </div><br>
-        </div>
-
-        <div class="skills__six">
-            <h3><span>85%</span> Olive</h3>
-            <div class="skills__bar">
-                <div class="skills__progress" style="height:0.2em;width:85%"></div>
-            </div><br>
-        </div>
-
-        <div class="skills__seven">
-            <h3><span>95%</span> Inkscape</h3>
-            <div class="skills__bar">
-                <div class="skills__progress" style="height:0.2em;width:95%"></div>
-            </div><br>
-        </div>
-
-        <div class="skills__eight">
-            <h3><span>85%</span> CSS Animation</h3>
-            <div class="skills__bar">
-                <div class="skills__progress" style="height:0.2em;width:85%"></div>
-            </div><br>
-        </div>
-
-
-
-
-    -->
-
-
-        <footer class="page-footer">
-            <div class="page-footer__inner">
-                Copyright &copy; 2021 Rafael Oliveira
-            </div>
-        </footer>
-
-        
-    </div>
+    <script src="js/main.js" defer></script>
 </body>
 </html>
