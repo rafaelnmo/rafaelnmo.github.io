@@ -853,7 +853,7 @@ a.card:hover,
 /* ---------- Article (research / project detail) ---------- */
 
 .article {
-    max-width: 760px;
+    max-width: 824px;
     margin: 0 auto;
     padding-bottom: clamp(56px, 9vw, 96px);
 }

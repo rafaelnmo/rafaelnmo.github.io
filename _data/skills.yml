@@ -1,0 +1,15 @@
+# Tool groups shown on the home and experience pages.
+# highlight: how many of the first tags get the amber style.
+
+- group: Implementation & signoff
+  highlight: 2
+  tags: [Synopsys ICC2, PrimeTime, Cadence Innovus, Tempus, DRC / LVS, SPICE]
+
+- group: Methodology
+  tags: [SDC, MMMC, UPF / Low power, CTS, ECO flows, RTL-to-GDSII]
+
+- group: Languages & tools
+  tags: [TCL, Python, C / C++, Git, Subversion, Linux]
+
+- group: Spoken
+  tags: [Portuguese (native), English (fluent)]

@@ -1,0 +1,28 @@
+{%- assign nav = page.nav -%}
+{%- if page.layout == "article" -%}
+  {%- include find-item.html -%}
+  {%- if kind == "research" %}{% assign nav = "Research" %}{% else %}{% assign nav = "Projects" %}{% endif -%}
+{%- endif -%}
+<header class="site-header">
+    <div class="container site-header__inner">
+        <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.author.name }}, home">
+            <span class="brand__mark">RO</span>
+            <span>{{ site.author.name }}</span>
+        </a>
+        <nav class="nav" aria-label="Main">
+            <ul class="nav__links" id="nav-links">
+                <li><a href="{{ '/' | relative_url }}"{% if nav == "Home" %} aria-current="page"{% endif %}>Home</a></li>
+                <li><a href="{{ '/research.html' | relative_url }}"{% if nav == "Research" %} aria-current="page"{% endif %}>Research</a></li>
+                <li><a href="{{ '/projects.html' | relative_url }}"{% if nav == "Projects" %} aria-current="page"{% endif %}>Projects</a></li>
+                <li><a href="{{ '/experience.html' | relative_url }}"{% if nav == "Experience" %} aria-current="page"{% endif %}>Experience</a></li>
+            </ul>
+            <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode">
+                {% include icon.html name="moon" %}
+                {% include icon.html name="sun" %}
+            </button>
+            <button class="icon-btn nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+                {% include icon.html name="menu" %}
+            </button>
+        </nav>
+    </div>
+</header>

@@ -1,0 +1,73 @@
+# Publications, newest first. Each entry needs a page with the same
+# name as its slug (e.g. research-fa-2025.html) holding the article text.
+# topics: any of full-adders, xor, mitigation, variability (used by the filters)
+
+- slug: research-fa-2025
+  year: 2025
+  kind: Journal
+  venue: Electronics (MDPI)
+  title: SET Mitigation Techniques for Full Adders at 7 nm
+  summary: Mirror, Hybrid, TGA and TFA full adders under nominal and near-threshold operation, hardened with decoupling cells and transistor sizing.
+  image: /images/research/fa-2025/fa-dut.png
+  topics: full-adders mitigation
+  doi: 10.3390/electronics14152937
+
+- slug: research-fa-2022
+  year: 2022
+  kind: Conference
+  venue: SBCCI 2022 · IEEE
+  title: SET Mitigation for Mirror and Hybrid Full Adders
+  summary: Decoupling cells and transistor sizing applied to two full adder topologies in 7 nm FinFET.
+  image: /images/research/fa-2022/critical_nodes.png
+  topics: full-adders mitigation
+  doi: 10.1109/SBCCI55532.2022.9893240
+
+- slug: research-variability-2022
+  year: 2022
+  kind: Journal
+  venue: INTEGRATION, Vol. 87
+  title: Process Variability in XOR-based Full Adders
+  summary: Delay and energy of traditional and XOR-based full adders under process variability, at nominal and near-threshold voltage.
+  image: /images/research/variability-2022/xorv8.png
+  topics: full-adders xor variability
+  doi: 10.1016/j.vlsi.2022.06.008
+
+- slug: research-mirror-2021
+  year: 2021
+  kind: Conference
+  venue: IEEE LATS 2021
+  title: SET Mitigation Techniques on a Mirror Full Adder
+  summary: Evaluating hardening techniques for the Mirror full adder at nominal and near-threshold voltage.
+  image: /images/research/mirror-2021/letth_NTV.png
+  topics: full-adders mitigation
+  doi: 10.1109/LATS53581.2021.9651889
+
+- slug: research-mirror-2020
+  year: 2020
+  kind: Conference
+  venue: IEEE ICECS 2020
+  title: SET Susceptibility on a Mirror Full Adder
+  summary: Node-by-node radiation sensitivity of the Mirror full adder in 7 nm FinFET.
+  image: /images/research/mirror-2020/mirror.png
+  topics: full-adders
+  doi: 10.1109/ICECS49266.2020.9294891
+
+- slug: research-xor-2020
+  year: 2020
+  kind: Journal
+  venue: JICS, Vol. 15 Nº 2
+  title: "XOR Gates: Electrical Behavior and SET Impact"
+  summary: Nine XOR topologies across CMOS and FinFET, logic families, temperature and near-threshold operation.
+  image: /images/research/xor-2020/test.png
+  topics: xor
+  doi: 10.29292/jics.v15i2.131
+
+- slug: research-xor-2019
+  year: 2019
+  kind: Conference
+  venue: IEEE ICECS 2019
+  title: Radiation Effects on 16 nm XOR Gates
+  summary: Single-event transient robustness of XOR gate topologies at the 16 nm node.
+  image: /images/research/xor-2019/xor.png
+  topics: xor
+  doi: 10.1109/ICECS46596.2019.8964801

@@ -1,0 +1,19 @@
+# "Core competencies" cards on the experience page.
+
+- title: SDC
+  text: Definition and validation of timing constraints for complex ASICs (clocks, exceptions, IO) for accurate STA and closure across MMMC scenarios.
+
+- title: UPF
+  text: "Low-power implementation with UPF: power domains, isolation strategies, level shifters and power-intent verification."
+
+- title: Floorplanning
+  text: Macro placement, power grid design and congestion-aware partitioning for optimal performance, power and routability.
+
+- title: Place & Route
+  text: Full PnR from synthesized netlist to tapeout, including placement, CTS, routing and physical optimization.
+
+- title: STA
+  text: "Static timing analysis and closure using MMMC methodologies: setup/hold fixing, ECO implementation and timing-driven optimization."
+
+- title: DRC / LVS
+  text: Physical verification and signoff with DRC, LVS, antenna and density checks for advanced-node manufacturability.

@@ -1,0 +1,17 @@
+# Timeline on the experience page, top to bottom.
+
+- when: Now
+  title: Physical Design & STA Engineer
+  text: Netlist-to-GDSII implementation and signoff timing in advanced nodes.
+
+- when: Founder
+  title: OSIRIS · VLSI Brasil
+  text: RISC-V research group and a Portuguese-language semiconductor blog.
+
+- when: 2018 – present
+  title: VLSI researcher, UFSC
+  text: Radiation effects and variability in FinFET combinational cells.
+
+- when: Education
+  title: B.Sc. & M.Sc. Computer Science
+  text: Federal University of Santa Catarina (UFSC).

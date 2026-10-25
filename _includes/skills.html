@@ -1,0 +1,11 @@
+{%- for g in site.data.skills %}
+<div class="skill-group reveal">
+    <h3>{{ g.group | escape }}</h3>
+    <ul class="tags">
+        {%- assign hl = g.highlight | default: 0 -%}
+        {%- for t in g.tags -%}
+        <li class="tag{% if forloop.index0 < hl %} tag--accent{% endif %}">{{ t | escape }}</li>
+        {%- endfor -%}
+    </ul>
+</div>
+{%- endfor %}

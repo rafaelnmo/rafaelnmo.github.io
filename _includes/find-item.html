@@ -1,0 +1,13 @@
+{%- comment -%}
+  Finds this page's entry in _data/research.yml or _data/projects.yml
+  by file name. Sets `item`, `items` and `kind` for the caller.
+{%- endcomment -%}
+{%- assign slug = page.name | remove: ".html" -%}
+{%- assign kind = "research" -%}
+{%- assign items = site.data.research -%}
+{%- assign item = items | where: "slug", slug | first -%}
+{%- unless item -%}
+  {%- assign kind = "projects" -%}
+  {%- assign items = site.data.projects -%}
+  {%- assign item = items | where: "slug", slug | first -%}
+{%- endunless -%}

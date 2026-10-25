@@ -1,0 +1,27 @@
+# Site-wide settings. Edit these and every page updates.
+# GitHub Pages builds this site with Jekyll automatically on every push.
+
+title: Rafael Oliveira
+description: >-
+  Rafael Oliveira, Physical Design and STA Engineer in Barcelona, Spain.
+  ASIC implementation, timing closure and fault-tolerant circuit research.
+url: https://rafaelnmo.github.io
+baseurl: ""
+
+author:
+  name: Rafael Oliveira
+  role: Physical Design & STA Engineer
+  city: Barcelona
+  country: Spain
+  email: rafaelnevesmello@gmail.com
+  linkedin: https://www.linkedin.com/in/rafaelnmo
+  github: https://github.com/rafaelnmo
+  vlsi_brasil: https://www.vlsibrasil.com.br
+  photo: /images/profile1.jpeg
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .github

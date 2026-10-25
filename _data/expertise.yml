@@ -1,0 +1,19 @@
+# "What I actually build" cards on the home page.
+
+- title: ASIC Physical Design
+  text: "End-to-end backend implementation from synthesized netlist to GDSII across 180 nm to 12 nm: floorplanning, placement, CTS, routing and physical optimization."
+
+- title: Timing Closure & STA
+  text: Multi-mode multi-corner (MMMC) timing analysis and closure with PrimeTime and Tempus. Setup/hold fixing, ECOs and congestion-aware optimization.
+
+- title: Physical Verification
+  text: DRC, LVS, antenna and density checks with industry tools, delivering signoff-quality layouts in advanced technologies.
+
+- title: Fault-Tolerant Design
+  text: Radiation-resilient combinational circuits and robust standard cell libraries for reliability in harsh environments.
+
+- title: RISC-V & ASIC Research
+  text: "Founder and technical lead of OSIRIS: RISC-V microarchitecture, RTL design and ASIC implementation with open-source flows (SkyWater 130 nm / 65 nm)."
+
+- title: Automation & Scripting
+  text: Flow automation and tool integration in TCL and Python to boost productivity and enable scalable design methodologies.
